@@ -1,0 +1,19 @@
+/* .css-banner-home .banner-home {
+    background-repeat: no-repeat;
+    height: 640px;
+    background-size: cover;
+    background-position: center center;
+} */
+
+.cor_fundo {
+    background-color: #fff9ee;
+}
+
+header{
+    background-color: #fbb712;
+    box-shadow:  0px 8px 20px;
+    width: auto;
+    height: 400px;
+    line-height: 10px;
+}
+
