@@ -1,79 +1,88 @@
-/* .css-banner-home .banner-home {
-    background-repeat: no-repeat;
-    height: 640px;
-    background-size: cover;
-    background-position: center center;
+/* definir a margin o padding e a fonte do site */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* .cor_fundo {
+    background-color: #fff9ee;      <------ essa tag é a cor de fundo do outro site que eu fiz, se quiser usar é so tirar do comentario 
 } */
 
-/* cor_de_fundo */
-.cor_fundo {
-    background-color: #fff9ee;
-}
-/* ----------------------------------- */
-
-
-/* tag_header tudo que tem no cabeçalho do mapa */
+/* mexe no cabeçalho do site e coloca a imagem de fundo */
 header{
-    background-color: #fbb712;
-    box-shadow:  0px 8px 20px;
-    width: auto;
-    height: 400px;
-    line-height: 10px;
-}
-/* ---------------------------------------- */
-
-/* configuração do menu de navegação */
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 2rem;
-    /* background-image: url("image/background_novo2.jpg"); */
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
     width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./imagins/hapvida.png'); /* a parte rgba serve para deixar a imagem com esse tema escuro */
+    background-position: center;
+    background-size: cover;
 }
-/*------------------------------------------- */
 
-/* lista com a cor laranja com as opções, contendo os links */
-.nav-list {
+
+a {
+    text-decoration: none;
+}
+
+/* esse header .menu mexe na class menu do header */
+header .menu {
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin: auto;
-    margin-bottom: 10px;
-    margin-right: auto;
-    border: 5px;
-    border-radius: 10px;
-    background-color: #ff5902;
-    padding-left: 1px;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 40px;
 }
 
-.nav-list-notebook {
-    width: 90%;
+/* esse header .menu li mexe na parte da tag li do header class menu */
+header .menu li{
+    display: inline-block;
+}
+/* e esse aqui mexe na tag 'a' da class menu contido no header */
+header .menu a{
+    color: white;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 200ms;
+}
+
+/* mexe no header class menu que vai para a class ativo tbm, e o :hover ser para cirar interatividade com o mouse e a caixa de texto */
+header .menu .ativo, header .menu a:hover{
+    color: #444;
+    background-color: white;
+}
+
+/* esse principal mexe da parte do h2 e no se inscreva */
+.principal{ 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
-/* -------------------------------------------- */
 
-/* configurações sobre as lista na nav-list */
-.nav-item {
-    margin: auto;
-    padding: 10px;
-    
+/* a tag h2 o nome do trabalho */
+.principal h2{
+    color: white;
+    font-size: 45px;
 }
-/* --------------------------------------------- */
 
 
-/*mexe nos conteudos contidos nos links, incluindo os textos dos links */
-.nav-link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.45rem;
-    font-weight: 400px;
-    border: 5px solid #ff5902;
-    background-color: #ff5902;
-    border-radius: 5px;
-    margin: 10px;
+/* botão se inscreva */
+.principal .links a{
+    color: white;
+    padding: 10px 18px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: 200ms;
 }
-/* ----------------------------------------------- */
+/* :hover serve para criar interação com o mouse */
+.principal .links a:hover{
+    color: #444;
+    background-color: white;
+}
+
+
+/* dica: oq for fazer de botão usa o :hover para criar essa interatividade com o mouse e o botão */
