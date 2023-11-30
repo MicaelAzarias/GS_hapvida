@@ -31,32 +31,42 @@
                             </li>
                         </a>
 
-                        <a class="link-midia-social" href="#">
+                        <a class="link-midia-social" href="index.html">
                             <li class="item-midia-social">
                                 <i class="fas fa-home"></i>
+                            </li>
+                        </a>
+
+                        <a class="link-midia-social" href="problema_e_solucao.html">
+                            <li class="item-midia-social">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </li>
+                        </a>
+
+                        <a class="link-midia-social" href="solucao.html">
+                            <li class="item-midia-social">
+                                <i class="fas fa-star"></i>
                             </li>
                         </a>
 
                     </ul>
                 </div> <!--midia social-->
                 <p class="descricao segunda-descricao">por favor coloque seu dados</p>
-                <form class="formulario">
-                    <label class="label-input iconi" for="">
+
+                <form id="formulario" class="formulario">
+
+                    <label class="label-input iconi" for="username">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="nome">
+                        <input id="username" type="text" placeholder="Digite seu nome...">
                     </label>
 
-                    <label class="label-input iconi" for="">
+                    <label class="label-input iconi" for="email">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="email">
+                        <input id="email" type="email" placeholder="Digite seu email...">
                     </label>
 
-                    <label class="label-input iconi" for="">
-                        <i class="fas fa-mobile-alt"></i>
-                        <input type="number" placeholder="numero">
-                    </label>
-                    
-                    <button class="btn btn-segundo">enviar</button>    <!--aqui-->
+                    <button type="submit" class="btn btn-segundo">enviar</button>    <!--aqui-->
+
                 </form>
             </div> <!--segunda coluna-->
         </section> <!--first-content-->
@@ -81,6 +91,7 @@
                 </div> <!--segunda coluna-->
         </section> <!--second-content-->
     </div>
-    <script src="./js/contatos.js"></script>
+    <script src="./js/contatos.js" defer>
+    </script>
 </body>
 </html>
