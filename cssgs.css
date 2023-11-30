@@ -70,6 +70,29 @@ header .menu .ativo, header .menu a:hover{
     flex-direction: column;
 }
 
+.principal h4 {
+    border-right: 4px solid;
+    color: white;
+    width: 55ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(55),
+    blinking 0.5s infinite step-end
+    alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
 /* a tag h2 o nome do trabalho */
 .principal h2{
     color: white;
